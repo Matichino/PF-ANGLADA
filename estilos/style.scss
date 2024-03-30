@@ -1,41 +1,34 @@
-// ----------------------------------------------
 // Variables
-// ----------------------------------------------
-
 // Fuentes y Modelos
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100&family=Open+Sans:ital,wght@1,500&family=Playfair+Display:ital,wght@1,500&display=swap");
 
-// ----------------------------------------------
-// Estilos generales
-// ----------------------------------------------
-
+// Reset
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+// Estilos para el cuerpo del documento
 body {
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(../assets/img/fondo.jpg);
+    background-image: url(../assets/img/fondo.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-// ----------------------------------------------
-// Header
-// ----------------------------------------------
-
+// Estilos para el encabezado
 header {
     background-color: black;
     font-family: "Kanit", sans-serif;
     color: white;
-    margin-bottom: 100px;
+    margin-bottom: 100px; // Navbar
 }
 
+// Estilos para el logo en el encabezado
 header .logo {
     float: left;
     width: 150px;
@@ -44,38 +37,33 @@ header .logo {
     object-fit: cover;
 }
 
+// Estilos para la barra de navegación en el encabezado
 header .barra {
     float: right;
-
-    ul li {
-        list-style: none;
-        display: inline-block;
-
-        a {
-            color: white;
-            text-decoration: none;
-
-            &:hover {
-                color: rgb(9, 188, 229);
-            }
-        }
-    }
 }
 
-// ----------------------------------------------
-// Subtitulos
-// ----------------------------------------------
+header .barra ul li {
+    list-style: none;
+    display: inline-block;
+}
 
+header .barra ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .barra ul li a:hover {
+    color: rgb(9, 188, 229);
+}
+
+// Estilos para subtítulos
 .titulo2 {
     font-family: "Open Sans", sans-serif;
     margin-top: 100px;
     text-align: center;
 }
 
-// ----------------------------------------------
 // Contenidos
-// ----------------------------------------------
-
 .content {
     display: flex;
     align-items: end;
@@ -90,38 +78,257 @@ header .barra {
     width: 50%;
 }
 
-// Otros estilos...
+// Foto del usuario
+.perfil {
+    border-radius: 50%;
+}
 
-// ----------------------------------------------
-// Footer
-// ----------------------------------------------
+// Párrafo del usuario
+.yo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
 
+// Video automático en la página principal
+.video {
+    width: 300px;
+    height: 300px;
+}
+
+.elemento {
+    flex: 1 0 auto;
+    margin: 0 30px;
+    width: 200px;
+    height: 200px;
+}
+
+// Formato de redes sociales
+.redes {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-align: center;
+    text-align: center;
+    line-height: 20px;
+    font-size: 30px;
+    margin: 10px;
+    color: white;
+    justify-content: center;
+}
+
+.content2 {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    justify-content: baseline;
+}
+
+.Contactodirecto {
+    display: block;
+}
+
+.respuesta {
+    width: auto;
+    height: auto;
+}
+
+// Pie de página
 .terminos {
     font-family: "Open Sans", sans-serif;
     font-size: 20x;
     color: rgb(14, 105, 180);
 }
 
-// ----------------------------------------------
-// Contacto
-// ----------------------------------------------
+// Contacto con Bootstrap
+.cards {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
 
+.card-body {
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.77);
+}
+
+.card-body .card-text {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+
+.card-body .card-title {
+    font-family: "Playfair Display", serif;
+    color: white;
+}
+
+.card-body .text-muted {
+    color: white;
+}
+
+.card-body .respuestas {
+    background-color: transparent;
+}
+
+.card-body .btn {
+    background-color: transparent;
+    border: none;
+}
+
+// Imagen de interrogación
+.interrogacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    margin-top: 50px;
+}
+
+// Valoración final
+.valoracion {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.valoracion input {
+    position: absolute;
+    top: -100px;
+}
+
+.valoracion label {
+    float: right;
+    color: #c1b8b8;
+    font-size: 30px;
+}
+
+.valoracion label:hover,
+.valoracion label:hover~label,
+input:checked~.valoracion label {
+    color: #ffff00;
+}
+
+// Todos los párrafos
+.parrafos-contexto {
+    display: block;
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-size: 15px;
+    justify-content: center;
+}
+
+// Valor de consulta
+.display-3 {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+// Estilos para el formulario de contacto
 .contact-form button {
     background: #056192;
     color: #fff;
     font-weight: 600;
     width: 25%;
-
-    &:focus {
-        box-shadow: none;
-    }
 }
 
-// Otros estilos...
+.contact-form button:focus {
+    box-shadow: none;
+}
 
-// ----------------------------------------------
-// Media Queries
-// ----------------------------------------------
+.container {
+    margin-top: 80px;
+}
+
+.container .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    border: none;
+    background-color: inherit;
+}
+
+.card .face {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    backface-visibility: hidden;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.card .face.front-face,
+.card .face.back-face {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .face.front-face .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card .face.front-face .name {
+    letter-spacing: 2px;
+}
+
+.card .face.front-face .designation {
+    font-size: 0.8rem;
+    color: #ddd;
+    letter-spacing: 0.8px;
+}
+
+.card:hover .face.front-face {
+    transform: rotateY(180deg);
+}
+
+.card .face.back-face {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.06);
+    transform: rotateY(180deg);
+    padding: 20px 30px;
+    text-align: center;
+    user-select: none;
+}
+
+.card .face.back-face .fa-quote-left {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 1.2rem;
+}
+
+.card .face.back-face .fa-quote-right {
+    position: absolute;
+    bottom: 35px;
+    right: 25px;
+    font-size: 1.2rem;
+}
+
+.card:hover .face.back-face {
+    transform: rotateY(360deg);
+}
 
 @media(max-width: 991.5px) {
     .col-lg-4 {
