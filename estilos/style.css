@@ -11,17 +11,17 @@
 body {
     color: white;
     font-family: Arial, sans-serif;
-    /* Tipo de fuente */
     margin: 0;
     padding: 0;
-    background-image: url(../assets/img/fondo.jpg);
+    background-image: url(../assets/img/fondo.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    /* COMIENZO HEADER */
-    /* FINAL HEADER */
 }
 
-body header {
+/* COMIENZO HEADER */
+/* FINAL HEADER */
+
+header {
     background-color: black;
     font-family: "Kanit", sans-serif;
     color: white;
@@ -29,7 +29,7 @@ body header {
     /* Navbar */
 }
 
-body header .logo {
+header .logo {
     float: left;
     width: 150px;
     height: 150px;
@@ -37,21 +37,21 @@ body header .logo {
     object-fit: cover;
 }
 
-body header .barra {
+header .barra {
     float: right;
 }
 
-body header .barra ul li {
+header .barra ul li {
     list-style: none;
     display: inline-block;
 }
 
-body header .barra ul li a {
+header .barra ul li a {
     color: white;
     text-decoration: none;
 }
 
-body header .barra ul li a:hover {
+header .barra ul li a:hover {
     color: rgb(9, 188, 229);
 }
 
@@ -143,7 +143,8 @@ body header .barra ul li a:hover {
     display: grid;
     align-items: center;
     justify-content: center;
-    }
+}
+
 .card-body {
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.77);
@@ -228,17 +229,16 @@ input:checked~.valoracion label {
 
 /*# sourceMappingURL=style.css.map */
 
-.contact-form button{
+.contact-form button {
     background: #056192;
     color: #fff;
     font-weight: 600;
     width: 25%;
 }
-.contact-form button:focus{
-    box-shadow:none;
+
+.contact-form button:focus {
+    box-shadow: none;
 }
-
-
 
 .container {
     margin-top: 80px;
@@ -271,8 +271,6 @@ input:checked~.valoracion label {
     backface-visibility: hidden;
     border-top: 1px solid #ddd;
     border-left: 1px solid #ddd;
-    /* border-right: 1px solid #999;
-border-bottom: 1px solid #999; */
 }
 
 .card .face.front-face,
@@ -338,4 +336,3 @@ border-bottom: 1px solid #999; */
         margin-bottom: 20px;
     }
 }
-
