@@ -18,6 +18,7 @@
 
 <body>
     <!--Header-->
+<main>
     <header>
         <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
@@ -65,53 +66,167 @@
     </header>
     <!--Fin Header-->
 
-    <!-- Zona media Pagina -->
-    <div class="cards">
-        <div class="card" style="width: 18rem;margin-top: 20px;margin-bottom: 20px;">
-            <img src="../assets/img/Facebook.jpg" class="card-img-top" alt="Facebook">
-            <div class="card-body">
-                <p class="card-text">Buscame en Facebook si no tienes otras redes sociales y quieres agregarme como amigo para resolver dudas! Búscame como Matias Anglada.</p>
+        <!-- Zona media Pagina -->
+        <div class="d-flex " style="justify-content: space-evenly;" >
+            <div class="card" style="width: 18rem;margin-top: 20px;margin-bottom: 20px;">
+                <img src="../assets/img/Facebook.jpg" class="card-img-top" alt="Facebook">
+                <div class="card-body">
+                    <p class="card-text">Buscame en Facebook si no tienes otras redes sociales y quieres agregarme como amigo para resolver dudas! Búscame como Matias Anglada.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;margin-top: 20px;margin-bottom: 20px;">
+                <img src="../assets/img/Instagram.jpg" class="card-img-top" alt="Instagram">
+                <div class="card-body">
+                    <p class="card-text">Contactame por una de las redes sociales más utilizadas y quédate atento a mis historias! Búscame como Matias Anglada.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;margin-top: 20px;margin-bottom: 20px;">
+                <img src="../assets/img/Linkedin.jpg" class="card-img-top" alt="Linkedin">
+                <div class="card-body">
+                    <p class="card-text">Conoce todo acerca de mi vida laboral y donde estoy planteando mis nuevos horizontes laborales! Búscame como Matias Anglada.</p>
+                </div>
             </div>
         </div>
-        <div class="card" style="width: 18rem;margin-top: 20px;margin-bottom: 20px;">
-            <img src="../assets/img/Instagram.jpg" class="card-img-top" alt="Instagram">
-            <div class="card-body">
-                <p class="card-text">Contactame por una de las redes sociales más utilizadas y quédate atento a mis historias! Búscame como Matias Anglada.</p>
+    <!-- Formulario de consulta -->
+        <div class="container contact">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="contact-info">
+                        <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
+                        <h2>Dejame tus datos de contacto</h2>
+                        <h4>Asi puedo agendarte!</h4>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="fname">Nombre</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="lname">Apellido</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Mail</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="comment">Comentario/Telefono/etc.</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card" style="width: 18rem;margin-top: 20px;margin-bottom: 20px;">
-            <img src="../assets/img/Linkedin.jpg" class="card-img-top" alt="Linkedin">
-            <div class="card-body">
-                <p class="card-text">Conoce todo acerca de mi vida laboral y donde estoy planteando mis nuevos horizontes laborales! Búscame como Matias Anglada.</p>
+    <!-- Experiencias Anteriores-->
+<h3 class="d-flex justify-content-center" style="color: rgb(255, 255, 255);">Testimonios de Clientes Anteriores </h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="face front-face">
+                            <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+                                alt="" class="profile">
+                            <div class="pt-3 text-uppercase name">
+                                Robert Garrison
+                            </div>
+                            <div class="designation">Android Developer</div>
+                        </div>
+                        <div class="face back-face">
+                            <span class="fas fa-quote-left"></span>
+                            <div class="testimonial">
+                                I made bacck the purchase price in just 48 hours! Thank you for making it pain less,
+                                pleasant.
+                                The service was execellent. I will refer everyone I know.
+                            </div>
+                            <span class="fas fa-quote-right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="face front-face">
+                            <img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                alt="" class="profile">
+                            <div class="pt-3 text-uppercase name">
+                                Jeffery Kennan
+                            </div>
+                            <div class="designation">Full Stack Developer</div>
+                        </div>
+                        <div class="face back-face">
+                            <span class="fas fa-quote-left"></span>
+                            <div class="testimonial">
+                                Really good, you have saved our business! I made bacck the purchase price in just 48 hours!
+                                man, this thing is getting better and better as I learn more about it.
+                            </div>
+                            <span class="fas fa-quote-right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="face front-face">
+                            <img src="https://images.unsplash.com/photo-1614574762522-6ac2fbba2208?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjY2fHxtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                alt="" class="profile">
+                            <div class="pt-3 text-uppercase name">
+                                Issac Maxwell
+                            </div>
+                            <div class="designation">Finance Director</div>
+                        </div>
+                        <div class="face back-face">
+                            <span class="fas fa-quote-left"></span>
+                            <div class="testimonial">
+                                Account keeper is the most valuable business research we have EVER purchased. Without
+                                electrician, we would ahave gone bankrupt by now.
+                            </div>
+                            <span class="fas fa-quote-right"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    
-        
-    <!-- Fin Zona media Pagina -->
 
+
+        
+            
+        <!-- Fin Zona media Pagina -->
+    </main>
 
 
     <!--Footer-->
     <!--Redes Sociales-->
     <!--Terminos Y Condiciones-->
     <footer>
-
-        <div class="text-center">
-            <p class="terminos">Todos los derechos de propiedad intelectual y derechos de autor relacionados con el
-                contenido de este sitio web están reservados de acuerdo con la legislación de derechos de autor de la
-                República Argentina. Este contenido incluye, pero no se limita a, texto, gráficos, logotipos, imágenes y
-                otros elementos multimedia. </p>
-            <a href target="_blank">
-                <i class="fa-brands fa-facebook"></i></a>
-            <a href target="_blank">
-                <i class="fa-brands fa-square-instagram"></i>
-                <a href target="_blank">
-                    <i class="fa-brands fa-linkedin"></i></a>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="terminos text-center">Todos los derechos de propiedad intelectual y derechos de autor relacionados con el contenido de este sitio web están reservados de acuerdo con la legislación de derechos de autor de la República Argentina. Este contenido incluye, pero no se limita a, texto, gráficos, logotipos, imágenes y otros elementos multimedia.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
         </div>
-
-
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
